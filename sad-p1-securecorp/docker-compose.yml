@@ -73,7 +73,7 @@ services:
     networks:
       securecorp:
         aliases:
-          - kdc.securecorp.local
+          - web.securecorp.local
     depends_on:
       - servidor
 
