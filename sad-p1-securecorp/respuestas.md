@@ -63,7 +63,15 @@ Pues porque slapd escucha lo que diga en la linea de SLAPD_SERVICES, entonces lo
 contraseña por la red?
 
 ```
+klist
+Ticket cache: FILE:/tmp/krb5cc_0
+Default principal: dgonzalez@SECURECORP.LOCAL
 
+Valid starting     Expires            Service principal
+10/08/26 11:12:04  10/08/26 21:12:04  krbtgt/SECURECORP.LOCAL@SECURECORP.LOCAL
+	renew until 10/15/26 11:12:04
+10/08/26 11:12:54  10/08/26 21:12:04  host/web.securecorp.local@SECURECORP.LOCAL
+	renew until 10/15/26 11:12:04
 ```
 
 **7. (C)** En el `docker-compose.yml`, ¿qué diferencia hay entre `build:` e `image:`? ¿Qué

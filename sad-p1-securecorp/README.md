@@ -51,3 +51,5 @@ puedes editar los LDIF con tu editor de siempre o con `nano` dentro del contened
 | Lo he roto todo | `./lab.sh reset` (borra las máquinas, conserva `pki/` y `ldif/`) |
 
 En Windows usa WSL (Ubuntu) con Docker Desktop: `lab.sh` es un script de bash.
+
+
