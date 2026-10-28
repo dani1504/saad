@@ -1,0 +1,6 @@
+Este txt es para documentar lo que cambio en la practica y por qué.
+
+1.1 cambiamos de policy accept a policy drop es decir, cambiamos la lista negra a la lista blanca ya que esta
+rechaza a todo el mundo menos a los que estan en la lista. Es mucho mas fiable porque asi no se nos escapa nadie.ç
+
+1.2 
