@@ -27,7 +27,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.27 seconds
 
 Después de `./lab.sh comprobar`, mira `./lab.sh ver`. ¿Cuántos paquetes lleva el contador de A6? ¿Quién los ha mandado?
 
->
+> Los ha mandado la máquina tienda (./lab.sh tienda) y fueron 8 paquetes que envié hacia la IP 172.16.10.20 que es el servidor ERP que se encuentra en la lan.
 
 ## Bloque B · La prueba del cifrado
 
@@ -51,14 +51,14 @@ listening on wan, link-type EN10MB (Ethernet), snapshot length 262144 bytes
 
 En dos líneas: ¿qué se ve por la calle y qué NO se ve?
 
->
+> Lo que se ve por la calle es solo tráfico UDP cifrado dirigido al puerto 51820 del firewall. Y no se ve ni la petición HTTP, ni el puerto 8080, ni la IP privada del ERP ni la IP interna del comercial en la VPN.
 
 ## Bloque C · Para la defensa (C4)
 
 Del **mismo ataque** (la inyección a la web): ¿qué ve el vigilante de la red (el IDS) y qué ve el portero de la web? ¿Por
 qué hacen falta los dos?
 
->
+> El IDS reconoce lo raro y solo avisa no para nada mientras que el portero de la web (IPS) mira al IDS y si ve algo, corta el paso en ese momento. Hacen falta los dos porque uno simplemente vigila y el otro protege, evitando tener que elegir bloquear un servicio por error o quedarnos ciego ante un ataque.
 
 ## Bloque D · La nota del servidor (D0 y D4)
 
