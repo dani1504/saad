@@ -64,8 +64,8 @@ qué hacen falta los dos?
 
 Nota del análisis **antes** de bastionar (D0):
 
->
+> 58/100
 
 Nota **después** (D4). ¿Por qué no llega a 100? ¿Significa que el servidor sigue inseguro? Comenta un aviso que siga saliendo.
 
->
+> 63/100. Lynis revisa cosas que aquí no tocamos (particiones, banners, HTTPS) y otras que no tienen sentido en un contenedor. Lynis no es un marcador: cada sugerencia que queda, o se aplica o se justifica. No, que falten puntos hasta el 100 no significa que el sistema sea vulnerable ni esté mal protegido. El servidor ya cuenta con las medidas críticas necesarias para operar de forma segura en su entorno. Un aviso que sigue saliendo es SSH-7408 · Consider hardening SSH configuration · Port (set 22 to ), de lo que nos avisa es que cambiemos el puerto por defecto de SSH (el puerto 22) por otro distinto.
