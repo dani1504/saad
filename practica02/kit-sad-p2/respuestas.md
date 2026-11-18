@@ -58,7 +58,7 @@ En dos líneas: ¿qué se ve por la calle y qué NO se ve?
 Del **mismo ataque** (la inyección a la web): ¿qué ve el vigilante de la red (el IDS) y qué ve el portero de la web? ¿Por
 qué hacen falta los dos?
 
-> El IDS reconoce lo raro y solo avisa no para nada mientras que el portero de la web (IPS) mira al IDS y si ve algo, corta el paso en ese momento. Hacen falta los dos porque uno simplemente vigila y el otro protege, evitando tener que elegir bloquear un servicio por error o quedarnos ciego ante un ataque.
+> Suricata (IDS/IPS) protege toda la red y sus servicios (puede ver los puertos, protocolos, conexiones), mientras que el WAF protege específicamente la lógica de la aplicación web mirando dentro de las peticiones HTTP/HTTPS donde el resto no puede ver.
 
 ## Bloque D · La nota del servidor (D0 y D4)
 
